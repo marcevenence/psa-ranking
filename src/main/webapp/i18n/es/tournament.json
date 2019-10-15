@@ -1,0 +1,31 @@
+{
+  "psaRankingApp": {
+    "tournament": {
+      "home": {
+        "title": "Tournaments",
+        "createLabel": "Crear nuevo Tournament",
+        "createOrEditLabel": "Crear o editar Tournament",
+        "notFound": "No Tournaments found"
+      },
+      "created": "Un nuevo Tournament ha sido creado con el identificador {{ param }}",
+      "updated": "Un Tournament ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Tournament ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Tournament {{ id }}?"
+      },
+      "detail": {
+        "title": "Tournament"
+      },
+      "name": "Name",
+      "playDate": "Play Date",
+      "endInscriptionDate": "End Inscription Date",
+      "status": "Status",
+      "active": "Active",
+      "createDate": "Create Date",
+      "updatedDate": "Updated Date",
+      "address": "Address",
+      "event": "Event",
+      "owner": "Owner"
+    }
+  }
+}
