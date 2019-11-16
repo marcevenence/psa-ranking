@@ -29,9 +29,11 @@
                 <td><a [routerLink]="['/province', province.id, 'view' ]">{{province.id}}</a></td>
                 <td>{{province.name}}</td>
                 <td>
-                    <div *ngIf="province.countryId">
-                        <a [routerLink]="['/country', province.countryId , 'view' ]" >{{province.countryId}}</a>
-                    </div>
+	                <div *ngIf="province.countryId">
+		                <div *ngFor="let item of countries">
+		                	<a [routerLink]="['/country', province.countryId , 'view' ]" *ngIf="(item.id == province.countryId)" >{{item.name}}</a>
+						</div>
+					</div>
                 </td>
                 <td class="text-right">
                     <div class="btn-group">

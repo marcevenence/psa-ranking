@@ -11,9 +11,11 @@
                 </dd>
                 <dt><span jhiTranslate="psaRankingApp.province.country">Country</span></dt>
                 <dd>
-                    <div *ngIf="province.countryId">
-                        <a [routerLink]="['/country', province.countryId, 'view']">{{province.countryId}}</a>
-                    </div>
+	                <div *ngIf="province.countryId">
+		                <div *ngFor="let item of countries">
+		                	<a [routerLink]="['/country', province.countryId , 'view' ]" *ngIf="(item.id == province.countryId)" >{{item.name}}</a>
+						</div>
+					</div>
                 </dd>
             </dl>
 
